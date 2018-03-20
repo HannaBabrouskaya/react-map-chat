@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chat</title>
+        <meta name="description" content="Chat and see location" />
+        <meta name="theme-color" content="#fff"/>
+        <link rel="canonical" href="https://mapapp-e821d.firebaseapp.com/"/>
+        <link rel="stylesheet" href="./style.css" media="all">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="container"></div>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+    <script>
+        if("serviceWorker" in navigator){
+            window.addEventListener('load', function() {
+                try {
+                    navigator.serviceWorker.register("./sw.js");
+                } catch(error){
+
+                }
+            });
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDT4eSnhFjH4ve3M-GzW-RKRL5Z5WjNM9Y",
+            authDomain: "mapapp-e821d.firebaseapp.com",
+            databaseURL: "https://mapapp-e821d.firebaseio.com",
+            projectId: "mapapp-e821d",
+            storageBucket: "",
+            messagingSenderId: "294336341883"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./app.js"></script>
+</html>

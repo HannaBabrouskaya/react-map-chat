@@ -1,0 +1,37 @@
+.main-login-form {
+    display: flex;
+    margin-top: 15px;
+	justify-content: center;
+}
+
+.card > div {
+	justify-content: left;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.login-button {
+    width: 100px;
+    margin-top:15px;
+}
+.error {
+    color:red; 
+    width:250px;
+    word-break:break-word; 
+    display:inline-block;
+}
+
+.chart-wrap {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    word-wrap:break-word;
+    height: 300px;
+}
